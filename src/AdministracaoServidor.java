@@ -8,6 +8,8 @@ public class AdministracaoServidor {
             Registry registry = LocateRegistry.createRegistry(1099);
             
             registry.rebind("Administracao", administracao);
+            
+            System.setProperty("java.rmi.server.hostname", "192.168.0.15");
             System.out.println("Servidor pronto.");
 		} catch (Exception e) {
             e.printStackTrace();

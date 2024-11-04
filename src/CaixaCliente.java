@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class CaixaCliente {
 	public static void main(String[] args) {
 		try {
-            Registry registry = LocateRegistry.getRegistry("IP_DO_SERVIDOR", 1099);
+            Registry registry = LocateRegistry.getRegistry("192.160.0.10", 1099);
             
             AdministracaoInterface adm = (AdministracaoInterface) registry.lookup("Administracao");
             
